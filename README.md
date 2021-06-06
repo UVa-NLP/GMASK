@@ -19,7 +19,7 @@ You can also use our well-trained [models](https://drive.google.com/drive/folder
 
 Note that the code is for the e-SNLI dataset. For the BERT model on other datasets, set `--task_name` with the data name `quora/qqp/mrpc`. For the MRPC dataset, set `--max_seq_length` as `100`. 
 
-For the DAttn model on other datasets, utilize the corresponding `DataLoader` and `Sampler` by revising line `1, 2, 6` in `load_data.py`. Set `--data_path` as `train.tsv`. Set the output dimension of the final linear layer of the DAttn model as `2` (line 59 in `deatten_model.py`).
+For the DAttn model on other datasets, utilize the corresponding `DataLoader` and `Sampler` by revising lines `1, 2, 6` in `load_data.py`. Set `--data_path` as `train.tsv`. Set the output dimension of the final linear layer of the DAttn model as `2` (line 59 in `deatten_model.py`).
 
 ### Explain models on test data via GMASK:
 Explain the well-trained model by running
